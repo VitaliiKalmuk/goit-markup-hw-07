@@ -17,8 +17,8 @@
 </head>
 
 <body>
-  <header class="container">
-    <div class="header">
+  <header class="header ">
+    <div class="header-container container">
       <nav class="header-block">
         <a class="header-logo" href="/index.html"><span>WEB</span>STUDIO</a>
         <ul class="header-nav list">
@@ -34,6 +34,7 @@
             <a class="header-link link" href="/">Contacts</a>
           </li>
         </ul>
+      </nav>
         <ul class="header-adress list">
           <li class="item">
             <a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -46,8 +47,6 @@
         <button class="burger-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <img class="icon-burger" src="./images/hamburger.svg" alt="Menu" />
         </button>
-
-      </nav>
     </div>
   </header>
 
@@ -348,7 +347,8 @@
       </div>
     </section>
     <!---section-4 -->
-    <section class="customers container">
+    <section class="customers">
+      <div class="container">
       <h2 class="customers-title">Customers</h2>
       <ul class="customers-list list">
         <li class="customers-list-item">
@@ -394,11 +394,13 @@
           </a>
         </li>
       </ul>
+    </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer-box container">
+      <div class="footer-tablet">
       <div class="footer-main">
         <a class="footer-logo" href="/"><span>WEB</span>STUDIO</a>
         <p class="footer-abstract">
@@ -439,6 +441,7 @@
           </li>
         </ul>
       </div>
+    </div>
       <div class="footer-form">
         <p class="footer-subscribe-title">Subscribe</p>
         <form class="footer-subscribe">
