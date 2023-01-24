@@ -363,11 +363,11 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .order-background  {
+  .order-background {
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
-        rgba(47, 48, 58, 0.4)
+        rgba(46, 47, 66, 0.7)
       ),
       url("../images/background/Dark-bghero-tab@1x.jpg");
   }
@@ -377,7 +377,7 @@ img {
   screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
   screen and (min-width: 768px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
-    .order-background  {
+  .order-background {
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
@@ -388,11 +388,11 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .order-background  {
+  .order-background {
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
-        rgba(47, 48, 58, 0.4)
+        rgba(46, 47, 66, 0.7)
       ),
       url("../images/background/people-office\ 1hero-desk@1x.jpg");
   }
@@ -402,11 +402,11 @@ img {
   screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
   screen and (min-width: 1200px) and (min-resolution: 192dpi),
   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-    .order-background  {
+  .order-background {
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
-        rgba(47, 48, 58, 0.4)
+        rgba(46, 47, 66, 0.7)
       ),
       url("../images/background/people-office\ 1hero-desk@2x.jpg");
   }
@@ -414,7 +414,7 @@ img {
 
 .order-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 31px;
   line-height: calc(40 / 36);
   text-align: center;
   letter-spacing: 0.02em;
@@ -476,9 +476,8 @@ img {
   top: 50%;
   left: 50%;
 
-  max-width: 392px;
+  width: calc(100% - 30px);
   min-height: 586px;
-  width: 100%;
   padding: 72px 16px 24px 16px;
 
   transform: translate(-50%, -50%) perspective(1000px) scale(1);
@@ -489,6 +488,19 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  overflow: auto;
+}
+
+@media screen and (min-width: 338px) {
+  .order-title {
+    font-size: 36px;
+  } 
+}
+
+@media screen and (min-width: 392px) {
+  .modal-window {
+    max-width: 392px;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -511,6 +523,13 @@ img {
 
   .modal-window {
     padding: 72px 24px 24px 24px;
+  }
+
+  .order-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: calc(60 / 56);
+    margin-bottom: 48px;
   }
 }
 
@@ -1428,6 +1447,10 @@ textarea::placeholder {
   color: var(--color-primary-text);
 }
 
+.menu-link.accent {
+color: var(--color-accent);
+}
+
 .menu-link:focus,
 .menu-link:hover {
   color: var(--color-accent);
@@ -1460,7 +1483,6 @@ textarea::placeholder {
 .menu-soc {
   display: flex;
   margin: 0 auto;
-  align-items: center;
   justify-content: center;
 }
 
@@ -1482,5 +1504,11 @@ textarea::placeholder {
 }
 
 .menu-soc-item:not(:last-child) {
-  margin-right: 56px;
+  margin-right: 34px;
+}
+
+@media screen and (min-width: 400px) {
+  .menu-soc-item:not(:last-child) {
+    margin-right: 56px;
+  }
 }
