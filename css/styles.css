@@ -477,7 +477,8 @@ img {
   left: 50%;
 
   width: calc(100% - 30px);
-  min-height: 586px;
+  height: 600px; 
+  max-height: 90vh;
   padding: 72px 16px 24px 16px;
 
   transform: translate(-50%, -50%) perspective(1000px) scale(1);
@@ -488,7 +489,7 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 @media screen and (min-width: 338px) {
@@ -1474,10 +1475,17 @@ color: var(--color-accent);
 }
 
 .menu-contact.accent {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(40 / 36);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(40 / 24);
   color: var(--color-accent);
+}
+
+@media screen and (min-width: 360px) {
+.menu-contact.accent {
+  font-size: 29px;
+  line-height: calc(40 / 29);
+}
 }
 
 .menu-soc {
